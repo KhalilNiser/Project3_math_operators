@@ -103,7 +103,6 @@ function incrementOperator()
     document.getElementById( "math" ).innerHTML = value;
 }
 
-
 //              ---- INCREMENT_OPERATOR ----
 function decrementOperator()
 {
@@ -114,17 +113,11 @@ function decrementOperator()
     document.getElementById( "math" ).innerHTML = value;
 }
 
-//              ---- RANDOM_NUMBERS: 0 - 09 ----
-document.getElementById("number").innerHTML =
-Math.floor(Math.random() * 10);
-
-//              ---- RANDOM_NUMBERS: 1 - 10 ----
-document.getElementById("number").innerHTML =
-Math.floor(Math.random() * 11);
-
-//              ---- RANDOM_NUMBERS: 1 - 100 ----
-document.getElementById("number").innerHTML =
-Math.floor(Math.random() * 100) + 1;
+//              ---- Function Displays: RANDOM_NUMBERS: 1 - 100 ----
+function getRandomInt( min, max )
+{
+    return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
+}
 
 
 
